@@ -46,7 +46,7 @@ function install-common-packages() {
 	ubuntu_version=`lsb_release -sr`
 	if [ "$ubuntu_version" == "17.04" ] || [ "$ubuntu_version" == "16.04" ]
 	then
-		add-apt-repository cloud-archive:ocata
+		add-apt-repository cloud-archive:ocata -y
 	else
 		echo "Ocata release supported only on Zesty (17.04) and Xenial (16.04)"
 		exit 1;
